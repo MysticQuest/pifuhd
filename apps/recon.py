@@ -3,6 +3,11 @@
 import sys
 import os
 
+try:
+    del os.environ['DISPLAY']
+except:
+    pass
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 ROOT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
